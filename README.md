@@ -31,11 +31,11 @@ Three data-quality issues were corrected before modelling: (1) blood pressure va
 
 | Metric | Value |
 |--------|-------|
-| AUROC | **0.9269** |
-| F1 (minority class) | **0.6267** |
-| Precision (minority) | 0.5984 |
-| Recall (minority) | 0.6579 |
-| Decision threshold used | 0.295 |
+| AUROC | **0.9374** |
+| F1 (minority class) | **0.6473** |
+| Precision (minority) | 0.6142 |
+| Recall (minority) | 0.6842 |
+| Decision threshold used | 0.755 |
 
 *All metrics computed on out-of-fold (OOF) predictions from 5-fold stratified cross-validation — no data leakage.*
 
