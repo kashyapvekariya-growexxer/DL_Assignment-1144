@@ -1,0 +1,7 @@
+{
+  "auroc": 0.9374,
+  "f1_minority": 0.6473,
+  "precision_minority": 0.6142,
+  "recall_minority": 0.6842,
+  "threshold": 0.755
+}
