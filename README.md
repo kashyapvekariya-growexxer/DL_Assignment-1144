@@ -15,7 +15,7 @@ Predict whether a patient will be readmitted within 30 days of discharge using s
 ## My model
 
 **Architecture:**
-3-hidden-layer MLP: `Input(21) → [Linear(128) → BatchNorm → ReLU → Dropout(0.35)] → [Linear(64) → BatchNorm → ReLU → Dropout(0.35)] → [Linear(32) → BatchNorm → ReLU → Dropout(0.35)] → Linear(1)`
+3-hidden-layer MLP: `Input(21) → [Linear(64) → BatchNorm → ReLU → Dropout(0.5)] → [Linear(32) → BatchNorm → ReLU → Dropout(0.5)] → [Linear(16) → BatchNorm → ReLU → Dropout(0.5)] → Linear(1)`
 
 Raw logits are output (no final sigmoid); `BCEWithLogitsLoss` with `pos_weight=8.0` handles both the sigmoid and the class-imbalance reweighting in a single numerically stable step. Trained with Adam (lr=3e-3), cosine annealing LR schedule, 80 epochs, batch size 128. Best checkpoint per fold selected by validation AUROC.
 
